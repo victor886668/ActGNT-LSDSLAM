@@ -1,0 +1,44 @@
+### INPUT
+expname = gnt_nuscen_eval
+rootdir = ./
+render_stride = 2
+distributed = False
+
+## dataset
+train_dataset = nerf_nuscence
+train_scenes = mini_nuscence
+eval_dataset = nerf_nuscence
+eval_scenes = mini_nuscence
+
+### TRAINING
+N_rand = 512
+lrate_feature = 0.001
+lrate_gnt = 0.004
+lrate_decay_factor = 0.5
+lrate_decay_steps = 50000
+single_net = True
+trans_depth = 4
+n_iters = 60000
+
+### MODEL
+ckpt_path = /root/GNT-code/out/gnt_nuscene/model_061004.pth
+
+### TESTING
+chunk_size = 20
+testskip = 5
+
+### RENDERING
+N_importance = 64
+N_samples = 16
+inv_uniform = True
+white_bkgd = False
+
+### logging/saving options
+i_img = 2000
+i_print = 18
+i_weights = 2000
+
+### evaluation options
+active_iter = 2000
+ds_rate = 3
+choose_k = 20
