@@ -1,0 +1,8 @@
+prefix=/home/slam/lsd_slam_ws/install
+
+Name: lsd_slam_core
+Description: Description of lsd_slam_core
+Version: 0.0.0
+Cflags: -I${prefix}/include -I/usr/include/eigen3
+Libs: -L${prefix}/lib -llsdslam
+Requires: libg2o

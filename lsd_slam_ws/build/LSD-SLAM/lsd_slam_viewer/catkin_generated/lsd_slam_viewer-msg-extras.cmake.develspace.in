@@ -1,0 +1,2 @@
+set(lsd_slam_viewer_MESSAGE_FILES "/home/slam/lsd_slam_ws/src/LSD-SLAM/lsd_slam_viewer/msg/keyframeMsg.msg;/home/slam/lsd_slam_ws/src/LSD-SLAM/lsd_slam_viewer/msg/keyframeGraphMsg.msg")
+set(lsd_slam_viewer_SERVICE_FILES "")
